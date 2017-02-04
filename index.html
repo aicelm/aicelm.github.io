@@ -1,177 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+
   <meta charset="UTF-8">
   <meta name="author" content="Leticia Matas Álvarez">
-  <link rel="stylesheet" href="aceilm.github.io/reset.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
   <title> Curriculum Vitae: Leticia Matas Álvarez</title>
-</head>
-<body>
-    <div id="header" class="center">
-    <ul id="menu" class="inline">
-      <li>
-        <a href="#experiencia"> Experiencia Profesional</a>
-      </li>
-      <li>
-        <a href= "#educacion"> Educación </a>
-      </li>
-      <li>
-        <a href= "#formacion"> Formación</a>
-      </li>
-      <li>
-        <a href="#habilidades"> Habilidades y Conocimientos</a>
-      </li>
-      <li>
-        <a href= "#contacto"> Contacto</a>
-      </li>
-    </ul>
-  </div>
-  <div id="contenido">
-    <div id = "yo">
-      <h1>Curriculum Vitae: <em>Leticia Matas Álvarez</em></h1>
-      <img src="aicel.github.io/yo.jpg" alt="Foto retrato de Leticia">
-      <p>
-        Ingeniera técnica en Topografía, Geodesia y Cartografía soy una apasionada del medio ambiente y la sostenibilidad, la Tierra y
-        todo lo que a ella se refiere. Me encantan las nuevas tecnologías y los SIG.
-      </p>
-    </div>
-    <hr>
-    <h2 id= "experiencia"> Experienca Profesional</h2>
-    <table id=  "tablaExperien" style= "width:70%">
-      <thead>
-        <tr>
-          <th> Empresa / Organización</th>
-          <th> Cargo </th>
-          <th> Departamento </th>
-          <th> Localización </th>
-          <th> Tiempo </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> Grupo CYS </td>
-          <td> Ingeniero técnico</td>
-          <td> Ingeniería </td>
-          <td> Madrid</td>
-          <td> Febrero'15 - Febrero'17 </td>
-        </tr>
-        <tr>
-          <td> Grupo Zener</td>
-          <td> Delineante</td>
-          <td> Ingeniería </td>
-          <td> Madrid</td>
-          <td> Octubre'14 - Febrero'15 </td>
-        </tr>
-        <tr>
-          <td> Decathlon </td>
-          <td> Venta </td>
-          <td> Sección Roller </td>
-          <td> Alcorcón (Madrid) </td>
-          <td> Junio'13 - Abril'14</td>
-        </tr>
-        <tr>
-          <td> TMJ - El Corte Inglés</td>
-          <td> Venta</td>
-          <td> Moda Caballero</td>
-          <td> Majadahonda (Madrid)</td>
-          <td> Marzo'12 - Febrero'13</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h2 id="educacion"> Educación</h2>
-    <table id=  "tablaEduca" style= "width:40%">
-      <thead>
-        <tr>
-          <th> Título</th>
-          <th> Entidad </th>
-          <th> Promoción</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Máster GIS VIII Edición</td>
-          <td>ESRI España</td>
-          <td>2017</td>
-        </tr>
-        <tr>
-          <td>Ingeniero Técnico Topografía, Geodesia y Cartografía</td>
-          <td>Universidad Politécnica Madrid</td>
-          <td>2013</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h2 id="formacion"> Formación Adicional</h2>
-        <ul>
-          <li>
-            "Iniciación Sistemas de Información Geográfica - ArcGIS 10.1"<br>
-            <em>"Universidad Politécnica de Madrid - Aquitectura"</em>
-          </li>
-          <li>
-            "Curso Contaminación y restauración de suelos"<br>
-            <em>"Escuela de Empresas"</em>
-          </li>
-          <li>
-            "Curso Prevención de Riesgos Laborales"<br>
-            <em>"Escuela de Empresas"</em>
-          </li>
-        </ul>
-    <hr>
-    <h2 id= "habilidades"> Habilidades y Conocimientos</h2>
-      <ul>
-        <li>
-          <strong> Sistemas Información Geográfica:</strong>
-          "ArcGIS 10.5, ArcGIS Pro, ArcGIS Online, ArcGIS Server, Geomedia System"
-        </li>
-        <li>
-          <strong> Desarrollo web:</strong>
-          "Python, HTML5, JavaScript"
-        </li>
-        <li>
-          <strong> Diseño y Edición:</strong>
-          "Photoshop CS6, Adobe Ilustrator, CorelDraw"
-        </li>
-        <li>
-          <strong>CAD:</strong>
-          "AutoCAD, MicroStation"
-        </li>
-      </ul>
-      <hr>
-      <h2 id="contacto">Contactar</h2>
-      <form id="email" method="GET">
-      <table>
-        <tr>
-          <td>
-            <label for ="to">Para:</label>
-              <input id="to" type="email" required>
-          </td>
-          <td>
-              <label for="topic">Temática:</label>
-              <select id="topic">
-                <option>-- Elige un tema --</option>
-                <option>Consulta</option>
-                <option>Propuesta</option>
-                <option>Reporte</option>
-                <option>Otros</option>
-              </select>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="subject">Asunto:</label>
-            <input id="subject" type="text" required>
-          </td>
-          <td>
-            <label for="body">Cuerpo:</label>
-            <textarea id="body" required></textarea>
-            <button type="submit" class="pure-botton pure-button primary">Enviar</button>
-          </td>
-        </tr>
-      </table>
-    </form>
-    </div>
+  <nav class="navbar navbar-inverse fixed clear fix navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Nombre de inicio -->
+          <a class="navbar-brand" href="#contenido">Sobre mí</a>
+        </div>
 
-</body>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Modificar esta lista con las secciones de tu curriculum -->
+          <li class="active"><a href="#experiencia">Experiencia</a></li>
+          <li class="active"><a href="#formacion">Formación</a></li>
+          <li class="active"><a href="#habilidades">Habilidades</a></li>
+          <li class="active"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" >
+    <div id="contenido" >
+        <div id = "yo">
+          <p>
+            <br>
+            <br>
+            <br>
+          </p>
+
+          <h1>Curriculum Vitae: Leticia Matas Álvarez</h1>
+          <img src="yo.jpg" alt="Foto retrato de Leticia" width="200">
+          <div id= "presentacion">
+            <p>
+              Me interesa el medio ambiente y la sostenibilidad, la Tierra y todo lo relacionado con ella.
+              También las nuevas tecnologías, energías renovables y los sistemas de información geográfica.
+              Soy una persona dinámica a la que le gusta enfrentarse a nuevos retos y en continuo aprendizaje.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="exper">
+        <h2 id= "experiencia"> Experienca Profesional</h2>
+        <table id=  "tablaExperien" style= "width:70%">
+          <thead>
+            <tr>
+              <th> Empresa / Organización</th>
+              <th> Cargo </th>
+              <th> Departamento </th>
+              <th> Localización </th>
+              <th> Tiempo </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Grupo CYS </td>
+              <td> Ingeniero técnico</td>
+              <td> Ingeniería </td>
+              <td> Madrid</td>
+              <td> Febrero'15 - Febrero'17 </td>
+            </tr>
+            <tr>
+              <td> Grupo Zener</td>
+              <td> Delineante</td>
+              <td> Ingeniería </td>
+              <td> Madrid</td>
+              <td> Octubre'14 - Febrero'15 </td>
+            </tr>
+            <tr>
+              <td> Decathlon </td>
+              <td> Venta </td>
+              <td> Sección Roller </td>
+              <td> Alcorcón (Madrid) </td>
+              <td> Junio'13 - Abril'14</td>
+            </tr>
+            <tr>
+              <td> TMJ - El Corte Inglés</td>
+              <td> Venta</td>
+              <td> Moda Caballero</td>
+              <td> Majadahonda (Madrid)</td>
+              <td> Marzo'12 - Febrero'13</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <hr>
+      <div id="educa">
+        <h2 id="educacion"> Educación</h2>
+        <table id=  "tablaEduca" style= "width:40%">
+          <thead>
+            <tr>
+              <th> Título</th>
+              <th> Entidad </th>
+              <th> Promoción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Máster GIS VIII Edición</td>
+              <td>ESRI España</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Ingeniero Técnico Topografía, Geodesia y Cartografía</td>
+              <td>Universidad Politécnica Madrid</td>
+              <td>2013</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <hr>
+      <div id="forma">
+        <h2 id="formacion"> Formación Adicional</h2>
+            <ul>
+              <li>
+                "Iniciación Sistemas de Información Geográfica - ArcGIS 10.1"<br>
+                <em>"Universidad Politécnica de Madrid - Aquitectura"</em>
+              </li>
+              <li>
+                "Curso Contaminación y restauración de suelos"<br>
+                <em>"Escuela de Empresas"</em>
+              </li>
+              <li>
+                "Curso Prevención de Riesgos Laborales"<br>
+                <em>"Escuela de Empresas"</em>
+              </li>
+            </ul>
+      </div>
+        <hr>
+      <div id="hab">
+        <h2 id= "habilidades"> Habilidades y Conocimientos</h2>
+          <ul>
+            <li>
+              <strong> Sistemas Información Geográfica:</strong>
+              "ArcGIS 10.5, ArcGIS Pro, ArcGIS Online, ArcGIS Server, Geomedia System"
+            </li>
+            <li>
+              <strong> Desarrollo web:</strong>
+              "Python, HTML5, JavaScript"
+            </li>
+            <li>
+              <strong> Diseño y Edición:</strong>
+              "Photoshop CS6, Adobe Ilustrator, CorelDraw"
+            </li>
+            <li>
+              <strong>CAD:</strong>
+              "AutoCAD, MicroStation"
+            </li>
+          </ul>
+      </div>
+          <hr>
+      <div id="contact">
+          <h2 id="contacto">Contactar</h2>
+          <p>
+            Puedes encontrarme en estos sitios para más información.
+          </p>
+
+    </div>
+        </div>
+      </div>
 </html>

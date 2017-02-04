@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,17 +23,20 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family:'Raleway', sans-serif;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+		line-height: 2.5rem
 }
 ol, ul {
-	list-style: none;
+	list-style: square;
+
 }
 blockquote, q {
 	quotes: none;
@@ -40,9 +44,45 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+table, thead, tbody {
+		border-collapse: collapse;
+		border-spacing: 0;
+		line-height: 3rem;
+		text-align: justify;;
+
+}
+
+#yo {
+	text-align: center;
+}
+#yo p{
+  line-height: 2.5rem; /* Interlineado */
+	font-style: italic;
+}
+
+body{
+  background: #e6e6e6;
+}
+
+h1{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Open Sans','Lato',sans-serif;
+}
+
+h2{
+	text-align: justify;;
+	font-size: 25px;
+	font-weight: normal;
+	font-family: 'Open Sans','Lato',sans-serif;
+}
+
+strong{
+  text-transform: uppercase; /* Minúsculas, capitalizar, ...*/
+}
+
+a{
+  text-decoration: none; /* Subrayado, tachado, ... */
 }
