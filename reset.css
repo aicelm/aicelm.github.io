@@ -46,14 +46,15 @@ q:before, q:after {
 	content: '';
 }
 
-table, thead, tbody {
+table{
 		border-collapse:separate;;
 		border-spacing: 0;
 		line-height: 4rem;
 		text-align:left;
-
 	}
-
+th{
+	font-size: 120%
+}
 #yo {
 	text-align: center;
 }
@@ -63,7 +64,7 @@ table, thead, tbody {
 }
 
 body{
-  background: #e6e6e6;
+  background:#e6e6e6;
 }
 
 h1{
