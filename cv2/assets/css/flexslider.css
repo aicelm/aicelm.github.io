@@ -1,0 +1,55 @@
+.flexslide{
+
+animation: fade;
+direction: ltr;
+animationLoop: true;
+smoothHeight: false;
+startAt: 0;
+slideshow: true;
+slideshowSpeed: 7000;
+animationSpeed: 600;
+initDelay: 0;
+randomize: false;
+
+<!-- Usability features-->
+pauseOnAction: true;
+pauseOnHover: false;
+useCSS: true;
+touch: true;
+video: false;
+
+// Primary Controls
+controlNav: true;
+directionNav: true;
+prevText: "Previous";
+nextText: "Next";
+
+// Secondary Navigation
+keyboard: true;
+multipleKeyboard: false;
+mousewheel: false;
+pausePlay: false:
+pauseText: 'Pause';
+playText: 'Play';
+
+// Special properties
+controlsContainer: "";
+manualControls: "";
+sync: "";
+asNavFor: "";
+
+// Carousel Options
+itemWidth: 0;
+itemMargin: 0;
+minItems: 0;
+maxItems: 0;
+move: 0;
+
+// Callback API
+start: function(slider){};
+before: function(slider){};
+after: function(slider){};
+end: function(slider){};
+added: function(slider){};
+removed: function(slider){} ;
+}
