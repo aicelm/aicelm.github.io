@@ -1313,9 +1313,9 @@
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
 		background-image: url("/images/overlay.PNG"), url("../../images/bg.JPG");
-		background-position: top left,					center center;
-		background-repeat: repeat,						none;
-		background-size: auto,						cover;
+		background-position: top left,center center;
+		background-repeat: no-repeat;
+		background-size: auto, cover;
 	}
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
@@ -2860,7 +2860,7 @@
 				#footer footer {
 					padding: 3em 3em 1em 3em ;
 					bottom: auto;
-					position: relative;
+					/*position: relative;*/
 				}
 
 	}
