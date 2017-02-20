@@ -112,7 +112,7 @@
 
 	#header {
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-		background-image: url("../../images/bg.jpg");
+		background-image: url("../../images/bg.JPG");
 		background-size: cover;
 		height: 100%;
 	}
@@ -135,7 +135,7 @@
 
 	#footer {
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-		background-image: url("../../images/bg.jpg");
+		background-image: url("../../images/bg.JPG");
 		background-size: cover;
 	}
 
@@ -145,5 +145,3 @@
 			position: relative;
 			z-index: 1;
 		}
-
-		
