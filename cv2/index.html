@@ -12,6 +12,7 @@
 		<link rel="icon" href="images/gor.png" type="images/gor.png">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/flexslider.css">
 
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -40,7 +41,7 @@
 					<span class="image fit primary"><img src="images/pic01.JPG" alt="Foto de Leticia. Detrás una casacada."></span>
 					<div class="content">
 						<header class="major">
-							<h2>Sobre mí</h2>
+							<h2>¿Quién soy?</h2>
 						</header>
 						<p>Me describo como una persona trabajadora, dinámica y alegre. Me encanta la naturaleza y creo en un camino hacia la sostenibilidad. <br>
 							Me gusta el diseño y las nuevas tecnologías, disfruto con el diseño web. Me encanta la cartografía y la maquetación de mapas. <br>
@@ -130,7 +131,7 @@
 							</li>
 							<li>
 								<span class="icon major fa-coffee"></span>
-								<h3>Interéses</h3>
+								<h3>Intereses</h3>
 							</li>
 						</ul>
 					</div>
@@ -181,6 +182,7 @@
 							</header>
 								<div class="slideshow-container">
 								  <div class="mySlides fade">
+
 										<blockquote>
 											<p><strong>"</strong>Cuando era el jefe del departamento de ingeniería de Zener por el año 2014, Leticia fue una apuesta personal mía. Estábamos ampliando personal,
 												y casualmente Leticia me mandó su CV de manera proactiva; decidí darle una oportunidad. Fue un gran fichaje. A pesar de su corta experiencia profesional,
@@ -191,8 +193,12 @@
 													Senior Attorney at WDNA - Wireless DN
 												</cite>
 										</blockquote>
+										<div class="text"></div>
+
+
 									<div class="mySlide fade">
-											<blockquote>
+
+											<blockquote style="width:100%">
 												<p><strong>"</strong>Conocí a Leticia en el comienzo de nuestra carrera profesional, podría destacar de ella sus aptitudes,
 													compromiso con el proyecto y capacidad resolutiva. La recomendaría sin duda.<strong>"</strong></p>
 													<cite>
@@ -200,7 +206,9 @@
 														Project Manager
 													</cite>
 											</blockquote>
+											<div class="text"></div>
 										</div>
+
 									</div>
 								</div>
 
@@ -604,14 +612,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<header class="major">
 						<h2>Contacto</h2>
 					</header>
-					<form method="post" action="conctactForm" name="contacForm">
+					<form method="post" action="form.php" name="email">
 						<div class="row uniform">
-							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre"></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email"></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Mensaje" rows="4"></textarea></div>
+							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre" maxlength="30"></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" maxlength="80"></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="Mensaje" maxlength="1000" rows="4"> </textarea> </div>
 							<div class="12u$">
 								<ul class="actions">
-									<li><input type="submit" value="Enviar Mensaje" class="special"></li>
+									<li><input type="submit" value="Enviar Mensaje" class="special"><a href="form.php"></a></li>
 								</ul>
 						</div>
 				</div>
@@ -622,10 +630,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li><a href="https://es.linkedin.com/in/matasalvarezleticia" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="skype:-skype-name-?chat" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
 						<li><a href="https://www.instagram.com/aicelm/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/aicelm/aicelm.github.io" class="icon alt fa-github"><span class="label">Gi</span></a></li>
+						<li><a href="https://github.com/aicelm/aicelm.github.io" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="mailto:matasalvarezleticia@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.twitter.com/aicel_m/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 					</ul>
-					<a href="#header" class="goto-next scrolly">^</a><br>
+					<a href="#header" class="goto-next scrolly">Inicio</a><br>
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
 						<li>&copy; Fotografías de Leticia Matas Álvarez</li>
@@ -642,8 +651,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/flexslider.js"></script>
 			<!--<script src="assets/js/ie/respond.min.js"></script>-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
