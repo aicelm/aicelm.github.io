@@ -162,7 +162,7 @@
 					options;
 
 				// No primary image? Bail.
-					if ($primaryImg.length == 0)
+					if ($primaryImg.length === 0)
 						return;
 
 				// Hack: IE8 fallback.
@@ -215,5 +215,45 @@
 			});
 
 	});
+	var showModal = function (i){
+		var obj = loadObj(i);
+		document.getElementById('aptitudes').setAttribute('class', 'modal');
+		//document.getElementById('company-link').setAttribute('href', obj.web);
 
+		document.getElementById('skills').innerHTML = obj.skills;
+	};
+
+	(function() {
+
+		var url = 'https://spreadsheets.google.com/feeds/list/1DmlsW78hm916t9sK1UDdnICOWO9QHPO5piJHaR5t-Lg/1/public/values?alt=json';
+
+		load(url, function(xhr) {
+			var len, i, tbody = '', li = '', response, obj;
+
+			response = JSON.parse(xhr.responseText);
+			$APP.data = response.feed.entry;
+			len = $APP.data.length;
+
+			for(i = 0; i < len; i++){
+				obj = loadObj(i);
+
+				tbody +=
+					'<tr onclick="showModal(\''+ i +'\')">'+
+						'<td>'+ obj.position +'</td>'+
+					'</tr>';
+
+				li +=
+					'<li>'+
+						'<p>'+
+							'<strong>'+ obj.position +'</strong><br>'+
+							'<a href="'+ obj.skills +
+						'</p>'+
+					'</li> ';
+			}
+		});
+
+		(document.querySelectorAll('#aptitudes .close')[0]).addEventListener('click', function(){
+			document.getElementById('aptitudes').setAttribute('class', 'modal closed')
+});
+		});
 })(jQuery);

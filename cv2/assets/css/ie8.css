@@ -29,16 +29,23 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="telefono"],
+	input[type="asunto"],
 	select,
 	textarea {
 		border: solid 2px #dddddd;
 		position: relative;
+
 	}
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"] {
+	input[type="email"]
+	input[type="telefono"],
+	input[type="asunto"],
+	{
 		line-height: 3em;
+
 	}
 
 	input[type="checkbox"],
