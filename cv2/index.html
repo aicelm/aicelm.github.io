@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="es">
 
 <head>
 	<title>CV Leticia Matas</title>
@@ -12,8 +12,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="images/gor.png" type="images/gor.png">
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/modal.css">
+	<link rel="stylesheet" href="assets/css/progress.css">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="assets/css/flexslider.css">
+
+	<!--  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
 
 
@@ -50,9 +56,7 @@
 					de mapas. <br> Me inspira el deporte, la música, la fotografía y el aire libre.</p>
 			</div>
 		</div>
-
 		<a href="#two" class="goto-next scrolly">Siguiente</a>
-
 	</section>
 	<!-- Fin One Sobre mi -->
 
@@ -121,21 +125,173 @@
 				<ul class="icons-grid">
 					<li>
 						<span class="icon major fa-camera-retro"></span>
-						<h3>Diseño</h3>
+						<a data-toggle="modal" data-target="#dismodal" class="button small special">Diseño</a>
 					</li>
 					<li>
-						<span class="icon major fa-object-ungroup" onclick="showModal('1')"></span>
-						<h3>CAD</h3>
+						<span class="icon major fa-object-ungroup"></span>
+						<a data-toggle="modal" data-target="#cadmodal" class="button small special">CAD</a>
 					</li>
 					<li>
-						<span class="icon major fa-code" onclick="showModal('2')"></span>
-						<h3>Programación</h3>
+						<span class="icon major fa-code"></span>
+						<a data-toggle="modal" data-target="#progmodal" class="button small special">Programación</a>
 					</li>
 					<li>
-						<span class="icon major fa-map-marker" onclick="showModal('3')"></span>
-						<h3>GIS</h3>
+						<span class="icon major fa-map-marker"></span>
+						<a data-toggle="modal" data-target="#gismodal" class="button small special">GIS</a>
 					</li>
 				</ul>
+
+
+
+
+
+								<!-- Modal -->
+								<div class="modal fade" id="dismodal" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h4 class="modal-title">Diseño</h4>
+											</div>
+											<div class="modal-body">
+
+
+													<div class="skillbar clearfix " data-percent="65%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>Photoshop</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">65%</div>
+													</div> <!-- End Skill Bar -->
+
+
+													<div class="skillbar clearfix " data-percent="85%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>CorelDraw</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">85%</div>
+													</div> <!-- End Skill Bar -->
+
+
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="button small special" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="modal fade" id="progmodal" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h4 class="modal-title">Programación</h4>
+											</div>
+											<div class="modal-body">
+
+													<div class="skillbar clearfix " data-percent="55%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>Python</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">55%</div>
+													</div> <!-- End Skill Bar -->
+
+
+													<div class="skillbar clearfix " data-percent="65%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>Javascripts</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">65%</div>
+													</div> <!-- End Skill Bar -->
+
+
+													<div class="skillbar clearfix " data-percent="30%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>VisulBasic</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">30%</div>
+													</div> <!-- End Skill Bar -->
+
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="button small special" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="modal fade" id="cadmodal" role="dialog">
+									<div class="modal-dialog">
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h4 class="modal-title">CAD</h4>
+											</div>
+											<div class="modal-body">
+
+													<div class="skillbar clearfix " data-percent="70%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>AutoCAD</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">70%</div>
+													</div> <!-- End Skill Bar -->
+
+													<div class="skillbar clearfix " data-percent="60%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>MicroStation</span></div>
+													<div class="skillbar-bar" style="background:#0d5d40;"></div>
+													<div class="skill-bar-percent">60%</div>
+													</div> <!-- End Skill Bar -->
+
+
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="button small special" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="modal fade" id="gismodal" role="dialog">
+									<div class="modal-dialog">
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h4 class="modal-title">GIS</h4>
+											</div>
+											<div class="modal-body">
+
+													<div class="skillbar clearfix " data-percent="85%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>ArcGIS</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">85%</div>
+													</div> <!-- End Skill Bar -->
+
+													<div class="skillbar clearfix " data-percent="60%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>Geomedia</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">60%</div>
+													</div> <!-- End Skill Bar -->
+
+													<div class="skillbar clearfix " data-percent="30%">
+													<div class="skillbar-title" style="background: #0d5d40;"><span>QGIS</span></div>
+													<div class="skillbar-bar" style="background: #0d5d40;"></div>
+													<div class="skill-bar-percent">30%</div>
+													</div> <!-- End Skill Bar -->
+
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="button small special" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+				<!-- </div>
+
+	</div> -->
 
 			</div>
 			<a href="#four" class="goto-next scrolly">Next</a>
@@ -180,15 +336,15 @@
 					<div class="mySlides fade">
 
 						<blockquote>
-							<p>Cuando era el jefe del departamento de ingeniería de Zener por el año 2014, Leticia fue una apuesta personal mía. Estábamos ampliando personal, y casualmente Leticia me mandó su CV de manera proactiva; decidí darle una oportunidad.
-								Fue un gran fichaje. A pesar de su corta experiencia profesional, Leticia fue de fácil adaptación a su nuevo medio ambiente laboral, muy eficiente, y siempre sonriente. Fue uno de los pilares de mi departamento. La recomiendo en cualquier puesto
-								en que se necesite tesón y entrega. Una grandísima profesional.</p>
+							<p>Cuando era el jefe del departamento de ingeniería de Zener por el año 2014, Leticia fue una apuesta personal mía. Estábamos ampliando personal, y casualmente Leticia me mandó su CV de manera proactiva; decidí darle una oportunidad. Fue un gran
+								fichaje. A pesar de su corta experiencia profesional, Leticia fue de fácil adaptación a su nuevo medio ambiente laboral, muy eficiente, y siempre sonriente. Fue uno de los pilares de mi departamento. La recomiendo en cualquier puesto en que se
+								necesite tesón y entrega. Una grandísima profesional.</p>
 
-									<h6>Gonzalo Arriaga, Ph.D.<br>
+							<h6>Gonzalo Arriaga, Ph.D.<br>
 									Senior Attorney at WDNA - Wireless DN</h6>
 
 
-							</blockquote>
+						</blockquote>
 
 						<div class="mySlide fade">
 
@@ -201,7 +357,7 @@
 							</blockquote>
 
 							<div class="action">
-							<a href="carta.pdf" class="button special icon fa-download" download>Carta de presentación</a>
+								<a href="carta.pdf" class="button special icon fa-download" download>Carta de presentación</a>
 							</div>
 						</div>
 
@@ -232,7 +388,7 @@
 			<header class="major">
 				<h2>Contacto</h2>
 			</header>
-		  <!-- <form method="post" action="form.php">
+			<!-- <form method="post" action="form.php">
 		    <div class="row uniform">
 		      <div class="6u 12u$(xsmall)">
 		        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre" />
@@ -287,18 +443,14 @@
 					<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nombre" maxlength="30" required></div>
 					<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" maxlength="80" required></div>
 					<div class="12u$">
-		        <textarea name="demo-message" id="demo-message" placeholder="Escribe tu mensaje" rows="6"></textarea>
-		      </div>
+						<textarea name="demo-message" id="demo-message" placeholder="Escribe tu mensaje" rows="6"></textarea>
+					</div>
 					<div class="12u$">
 						<ul class="actions">
-							<div class="12u$">
-				        <ul class="actions">
-				          <li><input type="submit" value="Enviar Mensaje" class="special" /></li>
-				          <li><input type="reset" value="Borrar" /></li>
-				        </ul>
-				      </div>
-				   </ul>
-						</div>
+							<li><input type="submit" value="Enviar Mensaje" class="special" /></li>
+							<li><input type="reset" value="Borrar" /></li>
+						</ul>
+					</div>
 				</div>
 			</form>
 
@@ -313,10 +465,22 @@
 				</ul>
 				<h5><a href="#header" class="goto-next scrolly">Inicio</a></h5>
 
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>&copy; Fotografías de Leticia Matas Álvarez</li>
-					</ul>
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Fotografías de Leticia Matas Álvarez</li>
+
+				</ul>
+				<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Faicelm.github.io%2F" target="_blank">
+				<img style="border:0;width:40px;height:15px" src="images/vhtml.png" alt="Valid HTML!">
+				</a>
+
+				<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Faicelm.github.io%2Fcv2%2Findex.html" target="_blank">
+				<img style="border:0;width:40px;height:15px" src="images/vcss.gif" alt="Valid CSS!">
+				</a>
+
+
+
+
 			</footer>
 
 		</div>
@@ -326,6 +490,7 @@
 	<!-- Scripts -->
 	<script>
 	</script>
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -333,7 +498,10 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/flexslider.js"></script>
 	<!-- <script src="assets/js/ie/respond.min.js"></script> -->
+	<script src="assets/js/progress.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/modal.js"></script>
+
 
 </body>
 
