@@ -1,6 +1,6 @@
 # Repositorio aicelm.github.io
 
-En el podrás encontrar el código de mi página personal: 
+En él podrás encontrar el código de mi página personal: 
 
 * [CV Leticia Matas](https://aicelm.github.io/cv2/index.html)
 
